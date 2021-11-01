@@ -1,18 +1,20 @@
 {
     "name": "react-storage-state",
-    "version": "0.0.5",
+    "version": "0.0.3",
     "private": false,
     "license": "MIT",
-    "description": "react hook for sync value beetween storage and state",
+    "description": "react hook for sync value beetween storage and state using context",
     "author": "rodrigo brandão <rodrigo.brandao.contato@gmail.com>",
     "keywords": [
         "react",
         "react-hooks",
+        "context",
+        "useState",
         "localStorage",
-        "persistent",
         "sessionStorage",
+        "persistent",
         "storage",
-        "useState"
+        "sync"
     ],
     "files": [
         "dist",
@@ -21,6 +23,7 @@
     "main": "dist/react-storage-state.js",
     "types": "dist/react-storage-state.d.ts",
     "module": "dist/react-storage-state.js",
+    "homepage": "https://github.com/brandaorodrigo/react-storage-state#README",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/brandaorodrigo/react-storage-state.git"
@@ -29,42 +32,20 @@
         "url": "https://github.com/brandaorodrigo/react-storage-state/issues"
     },
     "scripts": {
-        "start": "react-scripts start",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject",
         "build": "tsc"
     },
     "peerDependencies": {
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2"
+        "react": "^16.8.0",
+        "react-dom": "^16.8.0"
     },
     "dependencies": {
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2",
+        "react": "^16.8.0",
+        "react-dom": "^16.8.0",
         "web-vitals": "^1.1.2"
     },
     "devDependencies": {
-        "@testing-library/jest-dom": "^5.14.1",
-        "@testing-library/react": "^11.2.7",
-        "@testing-library/user-event": "^12.8.3",
-        "@types/jest": "^26.0.24",
         "@types/react": "^17.0.33",
         "@types/react-dom": "^17.0.10",
-        "@types/react-gtm-module": "^2.0.1",
-        "@types/react-router-dom": "^5.3.2",
-        "@typescript-eslint/eslint-plugin": "^5.2.0",
-        "@typescript-eslint/parser": "^5.2.0",
-        "eslint": "^7.32.0",
-        "eslint-config-airbnb": "^18.2.1",
-        "eslint-config-airbnb-typescript": "^12.3.1",
-        "eslint-config-prettier": "^8.3.0",
-        "eslint-plugin-import": "^2.25.2",
-        "eslint-plugin-import-helpers": "^1.1.0",
-        "eslint-plugin-jsx-a11y": "^6.4.1",
-        "eslint-plugin-prettier": "^3.4.1",
-        "eslint-plugin-react": "^7.26.1",
-        "eslint-plugin-react-hooks": "^4.2.0",
-        "prettier": "^2.4.1",
         "react-scripts": "^4.0.3",
         "typescript": "^4.4.4"
     },
