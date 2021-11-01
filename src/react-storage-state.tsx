@@ -27,8 +27,8 @@ const StorageProvider: React.FC<StorageProviderProps> = ({ children }) => {
 
         const setStorage = (newValue?: string | undefined): void => {
             if (newValue) {
-                webStorage.setItem(key, newValue);
-                setItems({ ...items, [key]: newValue });
+                webStorage.setItem(key, String(newValue));
+                setItems({ ...items, [key]: String(newValue) });
             } else {
                 webStorage.removeItem(key);
                 const current = { ...items };
