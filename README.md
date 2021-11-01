@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/npm/v/react-storage-state.svg)](https://www.npmjs.com/package/react-storage-state)
 
-this is a custom react hook for synchronize the value beetween **[`localStorage`](https://developer.mozilla.org/pt-BR/docs/Web/API/Window/localStorage)** or **[`sessionStorage`](https://developer.mozilla.org/pt-BR/docs/Web/API/Window/sessionStorage)** and **[`application state`](https://reactjs.org/docs/hooks-reference.html#usestate)** using the **[`useContext`](https://pt-br.reactjs.org/docs/hooks-reference.html#usecontext)** hook.
+this is a custom react hook for synchronize the value beetween **[`storage object`](https://developer.mozilla.org/pt-BR/docs/Web/API/Window/localStorage)** (_localStorage_ or _sessionStorage_) and **[`application state`](https://reactjs.org/docs/hooks-reference.html#usestate)** using the **[`useContext`](https://pt-br.reactjs.org/docs/hooks-reference.html#usecontext)** hook.
 
 ## install
 
@@ -16,7 +16,7 @@ npm install --save react-storage-state
 
 ```javascript
 const useStorage = useStorageContext();
-const [value, setValue] = useStorage("keyName", window.localStorage);
+const [value, setValue] = useStorage('keyName', window.localStorage);
 ```
 
 **useStorage** hook work almost like **[`useState`](https://reactjs.org/docs/hooks-reference.html#usestate)** but has some differences:
@@ -37,12 +37,12 @@ const [value, setValue] = useStorage("keyName", window.localStorage);
 ### index.js
 
 ```javascript
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import { StorageProvider } from "react-storage-state";
+import { StorageProvider } from 'react-storage-state';
 
-import App from "./App";
+import App from './App';
 
 ReactDOM.render(
     <React.StrictMode>
@@ -50,34 +50,34 @@ ReactDOM.render(
             <App />
         </StorageProvider>
     </React.StrictMode>,
-    document.getElementById("root")
+    document.getElementById('root')
 );
 ```
 
 ### App.js
 
 ```javascript
-import React from "react";
-import { useStorageContext } from "react-storage-state";
+import React from 'react';
+import { useStorageContext } from 'react-storage-state';
 
 function App() {
     const useStorage = useStorageContext();
 
-    const [console, setConsole] = useStorage("console");
+    const [console, setConsole] = useStorage('console');
 
-    const [game, setGame] = useStorage("game", window.sessionStorage);
+    const [game, setGame] = useStorage('game', window.sessionStorage);
 
     return (
         <div>
             <p>Console = {console}</p>
             <p>
-                <button onClick={() => setConsole("Dreamcast")}>
+                <button onClick={() => setConsole('Dreamcast')}>
                     Dreamcast
                 </button>
             </p>
             <p>Game = {game}</p>
             <p>
-                <button onClick={() => setConsole("Crazy Taxi")}>
+                <button onClick={() => setConsole('Crazy Taxi')}>
                     Crazy Taxi
                 </button>
             </p>

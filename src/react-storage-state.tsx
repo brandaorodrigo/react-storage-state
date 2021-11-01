@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState } from 'react';
 
 interface StorageContextProps {
     (key: string): [string | undefined, (value?: string | undefined) => void];
@@ -50,7 +50,7 @@ const StorageProvider: React.FC<StorageProviderProps> = ({ children }) => {
 const useStorageContext = (): StorageContextProps => {
     const context = useContext(StorageContext);
     if (!context) {
-        throw new Error("StorageContext must be use with StorageProvider");
+        throw new Error('StorageContext must be use with StorageProvider');
     }
     return context;
 };
