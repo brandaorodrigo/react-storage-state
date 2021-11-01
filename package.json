@@ -23,7 +23,7 @@
     "module": "dist/react-storage-state.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/brandaorodrigo/react-storage-state.git"
+        "url": "git+https://github.com/brandaorodrigo/react-storage-state.git"
     },
     "bugs": {
         "url": "https://github.com/brandaorodrigo/react-storage-state/issues"
