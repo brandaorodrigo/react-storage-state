@@ -1,9 +1,10 @@
 {
     "name": "react-storage-state",
+    "version": "0.0.5",
+    "private": false,
+    "license": "MIT",
     "description": "react hook for sync value beetween storage and state",
     "author": "rodrigo brandão <rodrigo.brandao.contato@gmail.com>",
-    "version": "0.0.4",
-    "license": "MIT",
     "keywords": [
         "react",
         "react-hooks",
@@ -15,11 +16,11 @@
     ],
     "files": [
         "dist",
-        "src"
+        "README.md"
     ],
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "module": "dist/index.js",
+    "main": "dist/react-storage-state.js",
+    "types": "dist/react-storage-state.d.ts",
+    "module": "dist/react-storage-state.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/brandaorodrigo/react-storage-state.git"
@@ -30,9 +31,14 @@
     "homepage": "https://github.com/brandaorodrigo/react-storage-state#README",
     "scripts": {
         "start": "react-scripts start",
-        "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "build": "react-scripts build",
+        "prepublish": "tsc"
+    },
+    "peerDependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
     },
     "dependencies": {
         "react": "^17.0.2",
