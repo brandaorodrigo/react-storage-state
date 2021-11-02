@@ -1,9 +1,9 @@
 {
     "name": "react-storage-state",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "private": false,
     "license": "MIT",
-    "description": "react hook for synchronize value beetween storage and state using context",
+    "description": "custom react hook for synchronize the value beetween storage object (localStorage or sessionStorage) and application state using the useContext hook.",
     "author": "rodrigo brandão <rodrigo.brandao.contato@gmail.com>",
     "keywords": [
         "react",
